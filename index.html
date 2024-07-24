@@ -410,11 +410,9 @@
                 var target = $(this.getAttribute('href'));
                 if(target.length) {
                     event.preventDefault();
-                    setTimeout(function() {
-                        $('html, body').stop().animate({
-                            scrollTop: target.offset().top - navHeight // Adjust offset for fixed navbar
-                        }, 1000);
-                    }, 300); // Adjust delay to ensure proper rendering
+                    $('html, body').stop().animate({
+                        scrollTop: target.offset().top - navHeight
+                    }, 1000);
                 }
             });
         });
