@@ -9,11 +9,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- CSS -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet"> 
-    <link rel="stylesheet" href="css/font-awesome.min.css"> 
-    <link rel="stylesheet" href="css/animate.css"> 
-    <link rel="stylesheet" href="css/prettyPhoto.css"> 
-    <link rel="stylesheet" href="css/style.css"> 
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/prettyPhoto.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -22,10 +22,6 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <style>
-        html {
-            scroll-behavior: smooth;
-        }
-
         .project-link {
             font-size: 0.9em;
             color: #0056b3;
@@ -125,7 +121,7 @@
     <!-- section about end -->
 
     <!-- section featured projects start -->
-    <section id="section-featured-projects" class="section-padding" style="padding-top: 0;">
+    <section id="section-featured-projects" class="section-padding">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -170,13 +166,13 @@
 
                     <br>
 
-                    <h3>Detection of AI-Generated Fake News <a href="167_code.pdf" class="project-link" target="_blank">Code</a> | <a href="167_writeup.pdf" class="project-link" target="_blank">Report</a> <span style="font-size: 14px; color: #777; margin-left: 10px;">03/01/2023 - 04/10/2023</h3>
+                    <h3>Detection of AI-Generated Fake News <a href="167_code.pdf" class="project-link" target="_blank">Code</a> | <a href="167_writeup.pdf" class="project-link" target="_blank">Report</a> <span style="font-size: 14px; color: #777; margin-left: 10px;">03/01/2023 - 04/10/2023</span></h3>
                     <p>Developed a classifier to distinguish between AI-generated fake news and human-written news article descriptions using a fine-tuned BERT model, achieving 92% accuracy. As AI technology improves, there has been an increase in the number of fake news articles on the internet, making this project crucial for maintaining the integrity of online information.</p>
                     <p><strong>Technologies Used:</strong> BERT, GPT-3 API, Scikit-learn, Pandas, Python</p>
 
                     <br>
 
-                    <h3>Shakespearean Poem Generator <a href="151b_3.pdf" class="project-link" target="_blank">Code</a> <span style="font-size: 14px; color: #777; margin-left: 10px;">05/01/2023 - 05/24/2023</h3>
+                    <h3>Shakespearean Poem Generator <a href="151b_3.pdf" class="project-link" target="_blank">Code</a> <span style="font-size: 14px; color: #777; margin-left: 10px;">05/01/2023 - 05/24/2023</span></h3>
                     <p>Developed an RNN-based model to generate Shakespearean-style poems that mimic the style of poems Shakespeare could have written. This project highlights my ability to apply deep learning techniques to creative text generation and demonstrates proficiency in handling and preprocessing text data.</p>
                     <p><strong>Technologies Used:</strong> RNN, PyTorch, NLTK, TQDM, Python</p>
                 </div>
@@ -389,11 +385,11 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script type="text/javascript" src="js/jquery.js"></script>
     <!-- Bootstrap jQuery -->
-    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- PrettyPhoto -->
-    <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.prettyPhoto/3.1.6/js/jquery.prettyPhoto.min.js"></script>
     <!-- Wow Animation -->
-    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <!-- singlepagenav -->
     <script src="js/jquery.singlePageNav.js"></script>
     <!-- Eeasing -->
@@ -411,7 +407,7 @@
                 if(target.length) {
                     event.preventDefault();
                     $('html, body').stop().animate({
-                        scrollTop: target.offset().top - navHeight
+                        scrollTop: target.offset().top - navHeight // Adjust offset for fixed navbar
                     }, 1000);
                 }
             });
